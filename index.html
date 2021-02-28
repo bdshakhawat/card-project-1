@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css card design</title>
+    <!-- After giving the image need to style it -->
+    <style>
+        /* if i want to add more cards then i need to style the card-container */
+        .card-container {
+            -moz-box-sizing: border-box;
+            /* apply flex property so that when we add multiple card then it remain flexible */
+            display: flex;
+        }
+        /* now need to set the card width */
+        .card {
+            width: 300px;
+            /* set a margin to move the card a bit from all side */
+            margin: 10px;
+            /* set a box-szing= border-box so, that the real size remain intact while using margin and padding */
+            box-sizing: border-box;
+            /* now to create a shadow in the card  */
+            box-shadow: 1px 2px 5px black;
+
+
+        }
+        /* now need to resize the image to fit to the card width */
+
+        .image-resize{
+            width: 100%;
+        }
+        /* give padding to create some gap among the text lines  */
+        .card-body{
+            padding: 5px;
+            background-color: #765f8c;
+            
+
+        }
+        /* make the title a little bit bigger */
+       .card-body .title{
+            font-size: 2rem;
+            text-align: center;
+            color: white;
+
+
+        }
+        /* now i want to align the description text */
+        .description {
+            text-align: justify;
+            line-height: 1.5;
+            /* After applyin white color of the text it will disappera so, need to give a backgrount color of the card body */
+            color: white;
+
+        }
+        /* now want to add hover effect. when the card will be hover then the box-shadow will be large */
+        .card :hover{
+            box-shadow: 6px 12px 10px white;
+        }
+    </style>
+</head>
+<body>
+    <!-- after designing one card if we want to create more cards the we need to create a container -->
+    <div class="card-container">
+        <div class="card">
+            <!-- first there will be an image. so lets take an image -->
+            <img class="image-resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaOdUUfjcKjr56GGLqQvFTDRkXtN00ET8A2g&usqp=CAU" alt="">
+            <!-- now inside the main div take another div for card body. i want to keep a tittle and description. so, create another two div -->
+            <div class="card-body">
+                <div class="title">
+                    Full stack Developer
+    
+                </div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta corporis deleniti quam autem, tempora quaerat in quo? Saepe soluta nostrum architecto exercitationem velit eligendi tempora explicabo beatae incidunt facere rem, laudantium iure veritatis id magnam distinctio possimus maiores quo sequi et error adipisci? Officiis recusandae dolores minima voluptates ullam deserunt.
+    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <!-- first there will be an image. so lets take an image -->
+            <img class="image-resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaOdUUfjcKjr56GGLqQvFTDRkXtN00ET8A2g&usqp=CAU" alt="">
+            <!-- now inside the main div take another div for card body. i want to keep a tittle and description. so, create another two div -->
+            <div class="card-body">
+                <div class="title">
+                    Full stack Developer
+    
+                </div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta corporis deleniti quam autem, tempora quaerat in quo? Saepe soluta nostrum architecto exercitationem velit eligendi tempora explicabo beatae incidunt facere rem, laudantium iure veritatis id magnam distinctio possimus maiores quo sequi et error adipisci? Officiis recusandae dolores minima voluptates ullam deserunt.
+    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <!-- first there will be an image. so lets take an image -->
+            <img class="image-resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaOdUUfjcKjr56GGLqQvFTDRkXtN00ET8A2g&usqp=CAU" alt="">
+            <!-- now inside the main div take another div for card body. i want to keep a tittle and description. so, create another two div -->
+            <div class="card-body">
+                <div class="title">
+                    Full stack Developer
+    
+                </div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta corporis deleniti quam autem, tempora quaerat in quo? Saepe soluta nostrum architecto exercitationem velit eligendi tempora explicabo beatae incidunt facere rem, laudantium iure veritatis id magnam distinctio possimus maiores quo sequi et error adipisci? Officiis recusandae dolores minima voluptates ullam deserunt.
+    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <!-- first there will be an image. so lets take an image -->
+            <img class="image-resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaOdUUfjcKjr56GGLqQvFTDRkXtN00ET8A2g&usqp=CAU" alt="">
+            <!-- now inside the main div take another div for card body. i want to keep a tittle and description. so, create another two div -->
+            <div class="card-body">
+                <div class="title">
+                    Full stack Developer
+    
+                </div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta corporis deleniti quam autem, tempora quaerat in quo? Saepe soluta nostrum architecto exercitationem velit eligendi tempora explicabo beatae incidunt facere rem, laudantium iure veritatis id magnam distinctio possimus maiores quo sequi et error adipisci? Officiis recusandae dolores minima voluptates ullam deserunt.
+    
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+
+    </div>
+    <!-- now take a main div where the card will be designed  -->
+    
+</body>
+</html>
