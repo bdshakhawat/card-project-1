@@ -14,4 +14,106 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-}
+    /* Now give a background image of the body */
+    background: linear-gradient(45deg, #ffaf00, #bb02ff);
+    /* Now fixed the background image so that it can not scroll with the text */
+    background-attachment: fixed;
+    }
+    .container {
+        position: relative;
+        width: 1150px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    .card {
+        position: relative;
+        /* determine the size of the card by giving its width and height */
+        width: 300px;
+        height: 420px;
+        /* Making the body color of the card white */
+        background: #fff;
+        /* create some 20px distance among the cards */
+        margin: 20px;
+        /* making the edge of the cards a little bit rounded */
+        border-radius: 20px;
+        overflow: hidden;
+        /* Apply shadow to the cards */
+        box-shadow: 0 15px 25px rgba(0, 0 0, 0.2);
+        transition: 0.5s;
+    }
+    .circle {
+        position: relative;
+        /* take another box on the cards */
+        width: 100%;
+        height: 100%;
+        /* give a black background to the box on the card */
+        background: #000;
+        /* Making the  black background round on the white cards*/
+        clip-path: circle(180px at center 0);
+        text-align: center;
+    }
+    .circle h2 {
+        /* giving a white color to the number  */
+        color: #fff;
+        /* making the number large */
+        font-size: 4.5em;
+        /* move the numbers of the cards 30px from the top position */
+        padding: 30px 0;
+    }
+    .content {
+        position: absolute;
+        bottom: 10px;
+        text-align: center;
+        /* page-break-after: 20px; */
+
+
+    }
+    .content p {
+        color: #666;
+
+    }
+    .content a {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        background: #000;
+        /* making the color of the text white */
+        color: #fff;
+        /* make the border rounded */
+        border-radius: 40px;
+        /* To remove the underline */
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    .card:nth-child(1) .circle, .card:nth-child(1) .content a{
+        background: #ffaf00;
+
+    }
+    .card:nth-child(2) .circle, .card:nth-child(2) .content a{
+        background: #da2268;
+
+    }
+    .card:nth-child(3) .circle, .card:nth-child(3) .content a{
+        background: #bb02ff;
+
+    }
+    /* when hover on the container then the card will blur and transform with opacity 0.5 */
+    .container:hover .card{
+        filter: blur(20px);
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+    /* now stop the blur effect on the card hover */
+    .container .card:hover{
+        filter: blur(0px);
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+
+
+
